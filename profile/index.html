@@ -1,0 +1,255 @@
+<!doctype html>
+<html lang="en">
+
+<!-- Mirrored from FT Nexavvy.com/profile/ by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 19 Jul 2025 14:36:47 GMT -->
+<!-- Added by HTTrack -->
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>FT Nexavvy | Profile | Business | Technology | Innovations</title>
+  <meta name="description"
+    content="The FT Nexavvy wordmark was designed using Century Gothic fonts with the tag line Business, Technology and Innovations; each separated by a pipe '|' marked in distinct color.">
+  <meta name="keywords" content="FT Nexavvy, Business, Innovations, Digital Marketing
+, Wordmark">
+  <meta property="og:title" content="FT Nexavvy | Brand Manual | Business | Technology | Innovations" />
+  <link rel="shortcut icon" href="/FT_Nexavvy.com/FT_Nexavvy.com/images/3d_logo.svg " type="image/x-icon">
+  <link rel="stylesheet" href="vendors/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="vendors/fullpage/fullpage.css">
+  <link rel="stylesheet" href="vendors/animation/animate.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/color.css">
+  <style>
+    .hamburger_menu_wrepper {
+      display: none;
+      z-index: 999;
+    }
+
+    .hamburger_menu_wrepper .animation-box {
+      width: 100%;
+      height: 100%;
+      align-items: center;
+      justify-content: center;
+      display: flex;
+    }
+
+    .country-code-box {
+      display: inline-block;
+      max-width: 25%;
+    }
+
+    .phone-no-box {
+      display: inline-block;
+      width: 73.9%;
+    }
+
+    .country-code-box input {
+      padding-right: 0;
+    }
+
+    /* White placeholder text */
+    .contact_form_box .text_box input::placeholder,
+    .country-code-box input::placeholder {
+      color: white !important;
+    }
+
+    .contact_form_box .text_box input::-webkit-input-placeholder,
+    .country-code-box input::-webkit-input-placeholder {
+      color: white !important;
+    }
+
+    .contact_form_box .text_box input::-moz-placeholder,
+    .country-code-box input::-moz-placeholder {
+      color: white !important;
+    }
+
+    .contact_form_box .text_box input:-ms-input-placeholder,
+    .country-code-box input:-ms-input-placeholder {
+      color: white !important;
+    }
+
+    /* Blue background for Verify Contact button */
+    .btn.g_hover {
+      background-color: #1999D5;
+    }
+
+    .btn.g_hover:hover {
+      background-color: #035c86;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!--
+<header class="header_area_one p_absoulte m_p">
+  <div class="container-fluid">
+    <div class="row align-items-center">
+      <div class="col-sm-12 col-12">
+        <div class="menu_right">
+          <div class="burger_menu"> 
+            <span class="media-text">Company Profile</span>
+            
+            <div class="dot_icon"> <span class="dot one"></span> <span class="dot two"></span> <span class="dot three"></span> <span class="dot four"></span> <span class="dot five"></span> <span class="dot six"></span> <span class="dot seven"></span> <span class="dot eight"></span> <span class="dot nine"></span> </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+-->
+
+  <!--
+	<div class="popup-overlay" id="popupOverlay">
+    <div class="popup-content">
+      <h2>Welcome to the Popup!</h2>
+      <p>This is some content in the popup.</p>
+      <button id="closePopup">Close</button>
+    </div>
+  </div>
+-->
+
+  <div class="hamburger_menu_wrepper" id="popupOverlay">
+
+    <div class="d-flex align-items-center justify-content-center h-100">
+
+      <div class="menu-box d-table navbar">
+        <div class="row download_media_form">
+          <div class="col-lg-12">
+            <div class="text">
+              <p align="left">Please fill up the details in the form below.</p>
+            </div>
+          </div>
+          <div class="col-lg-12">
+            <form action="https://FT_Nexavvy.com/profile/verify_otp.php" class="contact_form_box Download_Media_Kit"
+              name="Download_Media_Kit" id="Download_Media_Kit" method="post" novalidate="novalidate"
+              autocomplete="off">
+              <div class="form-group text_box">
+                <input type="text" class="" id="name" name="name" placeholder="Name">
+              </div>
+              <div class="form-group text_box">
+                <input type="text" name="email" id="email" placeholder="Your Email">
+              </div>
+              <div class="form-group text_box">
+                <div class="country-code-box">
+                  <input type="text" placeholder="+91" name="country_code" id="country_code" class="form-control"
+                    autocomplete="off">
+                </div>
+                <div class="phone-no-box">
+                  <input type="text" name="contact_no" placeholder="10 Digit Mobile No."
+                    onkeypress="contact_num_valid(event)" id="contact_no" minlength="10" maxlength="10">
+                  <input type="hidden" id="verify_otp" name="verify_otp" maxlength="4" disabled
+                    placeholder="Enter OTP received on your WhatsApp">
+                </div>
+              </div>
+              <div class="form-group text_box hide">
+                <input type="text" placeholder="4 Digit OTP" onkeypress="contact_num_valid(event)" id="OTP"
+                  minlength="4" maxlength="4">
+              </div>
+              <div class="form-group text_box">
+                <p id="error_data"></p>
+                <input type="hidden" id="g-recaptcha-response" name="g-recaptcha-response" class="g-recaptcha-response">
+              </div>
+              <div class="form-group text_box">
+                <button class="btn fl-btn color-bg button g_hover" type="submit" id="submit"
+                  name="Download_Media_Kit"><span>Verify Contact No</span> </button>
+                <input type="hidden" value="Company_Profile" name="type_of_form" />
+                <i class="fa fa-refresh" id="form_process"></i>
+              </div>
+            </form>
+            <div id="success">Your message succesfully sent!</div>
+            <div id="error">Opps! There is something wrong. Please try again</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="wavescroll">
+    <section class="section wave_one_section_one"> <img src="img/Nexavvy/bg_profile.png" alt="Nexavvy"> </section>
+
+  </div>
+  <!--
+<footer class="full_footer p_absoulte f_footer_one">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-12 col-12">
+        <div class="pr_details_nav h_slider_nav align-items-end"> <span class="prev" id="moveUp">Prev</span> <span class="next moveUp" id="moveDown">Next</span> </div>
+      </div>
+    </div>
+  </div>
+</footer>
+-->
+  <script src="js/jquery-3.2.1.min.js"></script>
+  <!--<script src="js/rotate.js"></script>	-->
+  <script src="js/mobile.js"></script>
+  <script src="vendors/fullpage/scroll-overflow.js"></script>
+  <script src="vendors/fullpage/fullpage.js"></script>
+  <!--<script src="js/parallax.js"></script> -->
+  <script src="js/custom.js"></script>
+  <script src="js/validation.js"></script>
+  <script>
+    // Show the popup on document ready
+    $(document).ready(function () {
+      $('#popupOverlay').fadeIn();
+    });
+
+
+    $('#closePopup').on('click', function () {
+      $('#popupOverlay').fadeOut();
+    });
+  </script>
+  <script src="../../www.google.com/recaptcha/apib28b.js?render=6LfrDbgZAAAAAELYxafcuzlkgVKBiKYE0X-ehR2l"></script>
+  <script>
+    function googleCaptcha() {
+      grecaptcha.ready(function () {
+        grecaptcha.execute('6LfrDbgZAAAAAELYxafcuzlkgVKBiKYE0X-ehR2l', { action: 'homepage' }).then(function (token) {
+          var recaptchaEls = document.getElementsByClassName('g-recaptcha-response');
+          for (var i = 0; i < recaptchaEls.length; i++) {
+            recaptchaEls[i].value = token;
+          }
+          document.getElementsByClassName('grecaptcha-badge')[0].style.display = 'none';
+        });
+      });
+    }
+    document.addEventListener("DOMContentLoaded", function (event) {
+      googleCaptcha();
+
+      function addXMLRequestCallback(callback) {
+        var oldSend, i;
+        if (XMLHttpRequest.callbacks) {
+          XMLHttpRequest.callbacks.push(callback);
+        } else {
+          XMLHttpRequest.callbacks = [callback];
+          oldSend = XMLHttpRequest.prototype.send;
+          XMLHttpRequest.prototype.send = function () {
+            for (i = 0; i < XMLHttpRequest.callbacks.length; i++) {
+              XMLHttpRequest.callbacks[i](this);
+            }
+            oldSend.apply(this, arguments);
+          }
+        }
+      }
+      addXMLRequestCallback(function (xhr) {
+        setTimeout(function () { googleCaptcha(); }, 1800);
+      });
+
+      var currentPage = location.href; setInterval(function () { if (currentPage != location.href) { currentPage = location.href; setTimeout(function () { googleCaptcha(); }, 1800); } }, 500);
+    });
+  </script>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-84199443-11"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-84199443-11');
+  </script>
+</body>
+
+<!-- Mirrored from FT Nexavvy.com/profile/ by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 19 Jul 2025 14:36:55 GMT -->
+
+</html>

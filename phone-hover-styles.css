@@ -1,0 +1,19 @@
+/* Phone number hover styles */
+.contacts-tel {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contacts-tel:hover {
+    color: blue;
+}
+
+/* Ensure the orange text part remains orange */
+.contacts-tel .orange-text {
+    color: #FF4916;
+}
+
+.contacts-tel:hover .orange-text {
+    color: #FF4916;
+}

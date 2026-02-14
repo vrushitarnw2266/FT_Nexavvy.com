@@ -1,0 +1,35 @@
+/* Enable horizontal scroll for clients section */
+.clients {
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.clients--inner {
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+.clients__statistic {
+  display: inline-flex;
+  flex-wrap: nowrap;
+}
+
+.clients__mobile,
+.clients__team,
+.clients__lastBlock {
+  display: inline-block;
+  vertical-align: top;
+  white-space: normal;
+}
+
+/* Hide scrollbar but keep functionality */
+.clients::-webkit-scrollbar,
+.clients--inner::-webkit-scrollbar {
+  height: 6px;
+}
+
+.clients::-webkit-scrollbar-thumb,
+.clients--inner::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 3px;
+}

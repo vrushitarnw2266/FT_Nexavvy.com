@@ -1,0 +1,57 @@
+.linkNone{
+   pointer-events: none;
+   cursor: none;
+   opacity: 0.3;
+}
+.linkNone p{
+   color:#00000030 !important;
+}
+.wpcf7 form.invalid .wpcf7-response-output, .wpcf7 form.unaccepted .wpcf7-response-output, .wpcf7 form.payment-required .wpcf7-response-output{
+   border: none;
+   color: white;
+}
+.wpcf7 form.sent .wpcf7-response-output{
+   border: none;
+   color: white;
+}
+
+/* .shareCopy.copy{
+   opacity: .8;
+   transition: 1s;
+} */
+
+.ar_topics__nav--links--inner a{
+   cursor: pointer;
+}
+
+.ar_topics__nav--subscribe .wpcf7-response-output, .ar_topics__basement--subscribe .wpcf7-response-output{
+   display: none;
+}
+
+.services {
+    background-color: black !important;
+}
+.services * {
+    color: white !important;
+}
+.services .roundabout--inner h4 svg path {
+    stroke: white !important;
+}
+.services__items--mob a {
+    border-bottom: 1px solid white !important;
+}
+.services svg path[stroke="black"] {
+    stroke: white !important;
+}
+.services__items--mob img[src*="arrow_black"] {
+    filter: invert(1) !important;
+}
+
+/* Additional gridlines for services sections */
+.services__body:before {
+    background:rgb(40, 40, 40)!important;
+}
+
+.services__items .roundabout:after {
+    background: rgb(40, 40, 40) !important;
+}

@@ -1,0 +1,96 @@
+img.brand-logo {
+    padding: 0 50px;
+}
+div#fp-nav {
+  display: none;
+}
+.font-text-type h3 {
+  font-size: 50px;
+  margin-bottom: 0;
+  line-height: 55px;
+  color: #000;
+}
+.font-light-row, .font-regular-row, .font-medium-row, .font-bold-row {
+  display: flex;
+  align-items: center;
+}
+.font-light-row span, .font-medium-row span {
+  margin-left: 25px;
+}
+.font-regular-row span, .font-bold-row span {
+  margin-right: 25px;
+}
+.font-light-row h3 {
+  font-weight: 300;
+}
+.font-regular-row h3 {
+  font-weight: 400;
+}
+.font-medium-row h3 {
+  font-weight: 500;
+}
+.font-bold-row h3 {
+  font-weight: 700;
+}
+.font-text-type span {
+  color: #a78e4e;
+}
+.font-heading {
+  background: #000;
+  display: inline-block;
+  padding: 5px 20px;
+  font-size: 20px;
+  margin-bottom: 15px;
+  color: #000;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  line-height: normal;
+}
+.w_content_two p:last-child {
+  margin-bottom: 0;
+}
+  .wave_one_section_one {
+  background-image: radial-gradient(
+    circle closest-side at 50% 50%,
+    rgba(0, 0, 0, 0.3) 0%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  position: fixed;
+}
+
+.wave_one_section_two, .wave_one_section_four {
+  background: #070707;
+}
+.wave_two_section_three, .wave_one_section_five {
+  background: #090909;
+}
+.font-section {
+  background: #090909;
+}
+.bg-logo-1 {
+  background: #000;
+}
+.bg-logo-2 {
+  background: #000;
+}
+.bg-logo-3 {
+  background: #000;
+}
+.bg-logo-4 {
+  background: #000;
+}
+.colour-bg-1 {
+  background: #a78e4e
+}
+.colour-bg-2 {
+  background: #b59c59
+}
+.colour-bg-3 {
+  background: #c4ae65
+}
+.colour-bg-4 {
+  background: #d3bd71
+}
+.colour-bg-5 {
+  background: #e2cd7c
+}
