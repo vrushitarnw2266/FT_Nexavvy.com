@@ -264,11 +264,7 @@
                   </span>
                 </p>
               </div>
-              <div class="popupForm__inputs--row hide" id='verify_otp_div'>
-                <p>OTP on Your WhatsApp</p>
-                <input class="form-control" type="text" placeholder="● ● ● ●" onkeypress="contact_num_valid(event)"
-                  id="otp" minlength="4" maxlength="4">
-              </div>
+             
             </div>
             <div class="response-output">
               <p id="error_data"></p>
@@ -371,11 +367,7 @@
                       </span>
                     </p>
                   </div>
-                  <div class="popupForm__inputs--row hide">
-                    <p>OTP on Your WhatsApp </p>
-                    <input class="wpcf7-form-control wpcf7-tel wpcf7-text wpcf7-validates-as-tel" type="text"
-                      placeholder="● ● ● ●" onkeypress="contact_num_valid(event)" id="OTP" minlength="4" maxlength="4">
-                  </div>
+                 
                 </div>
                 <div class="response-output">
                   <p id="error_data"></p>
@@ -385,10 +377,13 @@
                 </div>
                 <div class="popupForm--btn">
                   <button type="submit" id="submit" name="Contact_Us">
-
+                    <div>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="8" height="13" viewBox="0 0 8 13" fill="none">
+                        <path d="M1 1L6.5 6.5L1 12" stroke="#FF4916" />
+                      </svg>
+                    </div>
                     <p>Verify & Submit</p>
-                  </button>
-                  <input type="hidden" value="Contact_Us" name="type_of_form" />
+                  </button> <input type="hidden" value="Contact_Us" name="type_of_form" />
                   <i class="fa fa-sync" id="form_process"></i>
                 </div>
               </form>
@@ -643,7 +638,7 @@
               </div>
             </div>
           </div>
-          <div class="footer-fix-logo"><a href="hero.html"><img src="images/Footer_logo.png" class="footer-bg-logo"
+          <div class="footer-fix-logo"><a href="index.html"><img src="images/Footer_logo.png" class="footer-bg-logo"
                 alt=""></a></div>
         </section>
       </main>
@@ -663,7 +658,7 @@
   <script src="cbtheme/assets/js/validation.js"></script>
 
 
-  <script src="../www.google.com/recaptcha/apib28b.js?render=6LfrDbgZAAAAAELYxafcuzlkgVKBiKYE0X-ehR2l"></script>
+  <script src="https://www.google.com/recaptcha/api.js?render=6LfrDbgZAAAAAELYxafcuzlkgVKBiKYE0X-ehR2l"></script>
   <script>
     function googleCaptcha() {
       grecaptcha.ready(function () {

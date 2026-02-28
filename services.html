@@ -109,6 +109,14 @@
     .s_industries__body--left {
       border-right: 1px solid rgb(74, 74, 74);
     }
+
+    .s_service--btn p {
+      color: #ffffff !important;
+    }
+
+    .s_service__project p {
+      color: #ffffff !important;
+    }
   </style>
 </head>
 
@@ -259,11 +267,7 @@
                   </span>
                 </p>
               </div>
-              <div class="popupForm__inputs--row hide" id='verify_otp_div'>
-                <p>OTP on Your WhatsApp</p>
-                <input class="form-control" type="text" placeholder="● ● ● ●" onkeypress="contact_num_valid(event)"
-                  id="otp" minlength="4" maxlength="4">
-              </div>
+             
             </div>
             <div class="response-output">
               <p id="error_data"></p>
@@ -367,11 +371,7 @@
                       </span>
                     </p>
                   </div>
-                  <div class="popupForm__inputs--row hide">
-                    <p>OTP on Your WhatsApp </p>
-                    <input class="wpcf7-form-control wpcf7-tel wpcf7-text wpcf7-validates-as-tel" type="text"
-                      placeholder="● ● ● ●" onkeypress="contact_num_valid(event)" id="OTP" minlength="4" maxlength="4">
-                  </div>
+                 
                 </div>
                 <div class="response-output">
                   <p id="error_data"></p>
@@ -381,10 +381,13 @@
                 </div>
                 <div class="popupForm--btn">
                   <button type="submit" id="submit" name="Contact_Us">
-
+                    <div>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="8" height="13" viewBox="0 0 8 13" fill="none">
+                        <path d="M1 1L6.5 6.5L1 12" stroke="#FF4916" />
+                      </svg>
+                    </div>
                     <p>Verify & Submit</p>
-                  </button>
-                  <input type="hidden" value="Contact_Us" name="type_of_form" />
+                  </button> <input type="hidden" value="Contact_Us" name="type_of_form" />
                   <i class="fa fa-sync" id="form_process"></i>
                 </div>
               </form>
@@ -449,7 +452,7 @@
                     website we build is optimized for speed, mobile-responsiveness, and user engagement—ensuring your
                     online presence stands out in a competitive digital world.</p>
                 </div>
-                <a href="website-designing-and-development.html" class="s_service--btn button scaleEffect">
+                <a href="" class="s_service--btn button scaleEffect">
                   <div> <img src="cbtheme/assets/img/arrow_white.svg" alt="Website Design and Development"
                       title="Website Design and Development"> </div>
                   <p>View More</p>
@@ -463,32 +466,62 @@
                   website we build is optimized for speed, mobile-responsiveness, and user engagement—ensuring your
                   online presence stands out in a competitive digital world.</p>
               </div>
-              <div class="s_service__items"> <a class="s_service__item" href="html-website.html">
-                  <p class="s_service__item--name">HTML Website</p>
-                </a> <a href="static-website.html" class="s_service__item">
-                  <p class="s_service__item--name">Static Website</p>
-                </a> <a class="s_service__item" href="dynamic-website.html">
-                  <p class="s_service__item--name">Dynamic Website</p>
-                </a> <a class="s_service__item" href="mobile-first-website.html">
-                  <p class="s_service__item--name">Mobile First Website</p>
-                </a> <a class="s_service__item" href="mobile-website.html">
-                  <p class="s_service__item--name">Mobile Website</p>
-                </a> <a class="s_service__item" href="microsites-and-landing-pages.html">
-                  <p class="s_service__item--name">Microsites & Landing Pages</p>
-                </a> <a href="cms.html" class="s_service__item">
-                  <p class="s_service__item--name">Content Management Systems</p>
-                </a> <a href="ecommerce-websites.html" class="s_service__item">
-                  <p class="s_service__item--name">Ecommerce Websites</p>
-                </a> <a class="s_service__item" href="custom-website-development.html">
-                  <p class="s_service__item--name">Custom Web Development</p>
-                </a> <a class="s_service__item" href="website-maintenance-services.html">
-                  <p class="s_service__item--name">Website Maintenance Services</p>
-                </a> <a href="api-services.html" class="s_service__item">
-                  <p class="s_service__item--name">API Service</p>
-                  <div class="s_service__item--btn"> <span>View More</span>
 
-                  </div>
-                </a> </div>
+              <div class="s_service__items">
+
+  <div class="s_service__item">
+    <p class="s_service__item--name">HTML Website</p>
+  </div>
+
+  <div class="s_service__item">
+    <p class="s_service__item--name">Static Website</p>
+  </div>
+
+  <div class="s_service__item">
+    <p class="s_service__item--name">Dynamic Website</p>
+  </div>
+
+  <div class="s_service__item">
+    <p class="s_service__item--name">Mobile First Website</p>
+  </div>
+
+  <div class="s_service__item">
+    <p class="s_service__item--name">Mobile Website</p>
+  </div>
+
+  <div class="s_service__item">
+    <p class="s_service__item--name">Microsites & Landing Pages</p>
+  </div>
+
+  <div class="s_service__item">
+    <p class="s_service__item--name">Content Management Systems</p>
+  </div>
+
+  <div class="s_service__item">
+    <p class="s_service__item--name">Ecommerce Websites</p>
+  </div>
+
+  <div class="s_service__item">
+    <p class="s_service__item--name">Custom Web Development</p>
+  </div>
+
+  <div class="s_service__item">
+    <p class="s_service__item--name">Website Maintenance Services</p>
+  </div>
+
+  <div class="s_service__item">
+  <p class="s_service__item--name">API Service</p>
+  <div class="s_service__item--btn">
+    <span>View More </span>
+    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="25" viewBox="0 0 26 25" fill="none">
+      <path d="M1 0.5H25M25 0.5L1 24.5M25 0.5V24.5" stroke="white"/>
+    </svg>
+  </div>
+</div>
+
+</div>
+
+
               <div class="s_service__projects"> <a href="https://shop.hofindia.com/" target="_blank"
                   class="s_service__project"> <img src="images/services/hof-ecommerce-website.jpg"
                     alt="HOF E-commerce Website Design" title="HOF E-commerce Website Design">
@@ -517,7 +550,7 @@
                     Optimization and Search Engine Marketing strategies are engineered to maximise reach, boost ranking,
                     and position your brand where your customers can actually find you.
                 </div>
-                <a href="search-engine-marketing.html" class="s_service--btn button scaleEffect">
+                <a href="" class="s_service--btn button scaleEffect">
                   <div> <img src="cbtheme/assets/img/arrow_white.svg" alt="Search Engine Marketing"
                       title="Search Engine Marketing"> </div>
                   <p>View More</p>
@@ -569,7 +602,7 @@
                     registers domain names that align with your business identity, industry, and long-term branding
                     goals—ensuring your online presence starts with the perfect foundation. </p>
                 </div>
-                <a href="domain-keeping-and-hosting-services.html" class="s_service--btn button scaleEffect">
+                <a href="" class="s_service--btn button scaleEffect">
                   <div> <img src="cbtheme/assets/img/arrow_white.svg" alt="Domain Keeping & Hosting Service"
                       title="Domain Keeping & Hosting Service"> </div>
                   <p>View More</p>
@@ -623,7 +656,7 @@
                     If you notice a brand making noise online or creating a trend, there’s a good chance FT NEXAVVY
                     strategy is behind that momentum.
                 </div>
-                <a href="social-media-marketing.html" class="s_service--btn button scaleEffect">
+                <a href="" class="s_service--btn button scaleEffect">
                   <div> <img src="cbtheme/assets/img/arrow_white.svg" alt="Social Media Marketing"> </div>
                   <p>View More</p>
                 </a>
@@ -701,7 +734,7 @@
                     around detailed demographics, consumer behavior, and buyer personas—allowing us to deliver
                     high-quality leads and measurable growth for your business.
                 </div>
-                <a href="performance-marketing.html" class="s_service--btn button scaleEffect">
+                <a href="" class="s_service--btn button scaleEffect">
                   <div> <img src="cbtheme/assets/img/arrow_white.svg" alt="Search Engine Optimization
 " title="Search Engine Optimization
 "> </div>
@@ -766,7 +799,7 @@
                     identity isn’t just an advantage; it’s the fuel that drives customer trust, business growth, and
                     long-term success.</p>
                 </div>
-                <a href="branding-services.html" class="s_service--btn button scaleEffect">
+                <a href="" class="s_service--btn button scaleEffect">
                   <div> <img src="cbtheme/assets/img/arrow_white.svg" alt="Branding Services"> </div>
                   <p>View More</p>
                 </a>
@@ -1020,7 +1053,7 @@
               </div>
             </div>
           </div>
-          <div class="footer-fix-logo"><a href="hero.html"><img src="images/Footer_logo.png" class="footer-bg-logo"
+          <div class="footer-fix-logo"><a href="index.html"><img src="images/Footer_logo.png" class="footer-bg-logo"
                 alt=""></a></div>
         </section>
       </main>
@@ -1040,7 +1073,7 @@
   <script src="cbtheme/assets/js/validation.js"></script>
 
 
-  <script src="../www.google.com/recaptcha/apib28b.js?render=6LfrDbgZAAAAAELYxafcuzlkgVKBiKYE0X-ehR2l"></script>
+  <script src="https://www.google.com/recaptcha/api.js?render=6LfrDbgZAAAAAELYxafcuzlkgVKBiKYE0X-ehR2l"></script>
   <script>
     function googleCaptcha() {
       grecaptcha.ready(function () {
