@@ -49,9 +49,10 @@
 
 /* Additional gridlines for services sections */
 .services__body:before {
-    background:rgb(40, 40, 40)!important;
+   background: rgb(247 244 244) !important;
+
 }
 
 .services__items .roundabout:after {
-    background: rgb(40, 40, 40) !important;
+    background: rgb(241,241,241 ) !important;
 }

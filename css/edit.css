@@ -799,5 +799,51 @@ body {
 /* Index Page Hero Fixes */
 .hero__cursor,
 .hero__cursor--label {
-  display: none !important;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+/* ── Hero Click-Toggle Theme (pure BLACK & WHITE only) ───────────────────── */
+
+/* Smooth transitions when theme changes */
+.hero__cloth--inner>div,
+.hero__text h1,
+.hero__text h2,
+.hero__text p,
+.customCursor__cursor--inner p {
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+/* ── WHITE BG mode: everything is BLACK ── */
+.hero__text.hero__text--black h1,
+.hero__text.hero__text--black h2,
+.hero__text.hero__text--black p {
+  color: #000000 !important;
+}
+
+/* Force the pipe '|' spans to black too (override .theme-color blue) */
+.hero__text.hero__text--black h1 .theme-color,
+.hero__text.hero__text--black h2 .theme-color,
+.hero__text.hero__text--black span.theme-color {
+  color: #000000 !important;
+}
+
+/* ── DARK BG mode: everything is WHITE (pure #000000 background) ── */
+.hero__text.hero__text--white h1,
+.hero__text.hero__text--white h2,
+.hero__text.hero__text--white p {
+  color: #ffffff !important;
+}
+
+/* Force the pipe '|' spans to white too */
+.hero__text.hero__text--white h1 .theme-color,
+.hero__text.hero__text--white h2 .theme-color,
+.hero__text.hero__text--white span.theme-color {
+  color: #ffffff !important;
+}
+
+/* Make cover/image area show pointer cursor to hint it's clickable */
+.hero__cover {
+  cursor: pointer;
 }

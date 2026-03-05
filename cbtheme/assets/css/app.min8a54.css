@@ -3120,7 +3120,7 @@ body.noScroll {
     height: 0
   }
   100% {
-    width: 124px;
+    width: 0;
     height: 124px
   }
 }
@@ -3949,7 +3949,8 @@ body.noScroll {
 .hero__cursor--label {
   position: relative;
   width: 100%;
-  height: 100%
+  height: 100%;
+  display: blo;
 }
 .hero__backing {
   position: absolute;
@@ -4187,10 +4188,8 @@ body.noScroll {
   height: 124px;
   border-radius: 50%;
   transform: translate(50%, -50%);
-  width: 0;
-  height: 0;
-  overflow: hidden;
-  animation: scaleHeroLabel 0.35s 2s linear forwards
+  overflow: visible;
+  animation: none
 }
 @media (max-width: 1024px) {
   .hero__cover--label {
@@ -4807,7 +4806,9 @@ body.noScroll {
 }
 .services__body--pics--main img {
   position:static;
-  width: 129%;
+  width: 94%;
+  margin-left: 88px;
+  margin-top:-13px;
   height: 100%;
   object-fit: cover;
   transform: scale(0)
@@ -7726,7 +7727,8 @@ body.noScroll {
   display: flex;
   justify-content: center;
   background: #0D99D4;
-  position: relative
+  position: relative;
+  
 }
 @media (max-width: 625px) {
   .reviews__text {
@@ -8924,7 +8926,7 @@ color:#0D99D4 !important
   left: 50%;
   height: 1px;
   width: 0;
-  background: #000;
+  background: #fff;
   transform: translateX(-50%)
 }
 .contacts__social--item p {
@@ -9008,7 +9010,7 @@ color:#0D99D4 !important
   top: 0;
   height: 0;
   width: 1px;
-  background: #000
+  background: #fff
 }
 @media (max-width: 625px) {
   .contacts__social--item:not(:last-child):nth-of-type(even):after {
@@ -9073,7 +9075,7 @@ color:#0D99D4 !important
   position: absolute;
   left: 28px;
   top: 24px;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 16px;
   color: #000;
   opacity: 0
@@ -10307,7 +10309,7 @@ color:#0D99D4 !important
     content: "";
     position: absolute;
     top: 0;
-    background: #1A1A1A;
+    background: #fff;
     width: 0;
     height: 1px;
     left: 0
@@ -10320,7 +10322,7 @@ color:#0D99D4 !important
   content: "";
   position: absolute;
   bottom: 0;
-  background: #1A1A1A;
+  background: #fff;
   width: 0;
   height: 1px;
   left: 0
@@ -29831,4 +29833,12 @@ ul.list-seo {
         font-size: 120px;
         line-height: 110px;
     }
+}
+
+
+/* Force hero cover label to be visible */
+.hero__cover--label {
+  display: block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
 }
