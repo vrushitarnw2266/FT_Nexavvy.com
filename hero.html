@@ -288,46 +288,57 @@
         max-width: 70% !important;
       }
     }
-    .capabilities---more:before {
-    content: "";
-    position: absolute;
-    width: 1px;
-    height: 100%;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    background: #353535;
-}
 
-.capabilities---more {
-  display: flex;
-  justify-content: center;
-  position: relative
-}
-.capabilities---more a p {
-  color:white !important
-}
-@media (max-width: 625px) {
-  .capabilities---more {
-    padding: 52px 0 0 0
-  }
-}
-.capabilities---more:after {
-  position: absolute;
-  content: " ";
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 1px;
-  height: 52px;
-  background: #000;
-  display: none
-}
-@media (max-width: 625px) {
-  .capabilities---more:after {
-    display: block
-  }
-}
+    .works__more::after {
+      content: "";
+      position: absolute;
+      width: 1px;
+      height: 294px;
+      bottom: 50%;
+      left: 50%;
+      transform: translateX(-50%);
+      background: #fff;
+      z-index: -1;
+    }
+
+    .works__more {
+      display: flex;
+      justify-content: center;
+      position: relative;
+      margin-top: 100px;
+    }
+
+    .works__more a p {
+      color: white !important;
+    }
+
+    .works__item:last-child {
+      border-bottom: 1px solid #353535;
+    }
+
+    @media (max-width: 625px) {
+      .works__more {
+        padding: 52px 0 0 0;
+      }
+    }
+
+    .works__more::before {
+      position: absolute;
+      content: " ";
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 1px;
+      height: 52px;
+      background: #1999D5;
+      display: none;
+    }
+
+    @media (max-width: 625px) {
+      .works__more::before {
+        display: block;
+      }
+    }
   </style>
 
 
@@ -979,12 +990,17 @@
                 </div>
                 <p class="anim--title">Nexavvy</p>
               </div>
-
             </div>
-            <div class="capabilities---more"> <a href="services.html" class="scaleEffect button">
-                <div> <img src="cbtheme/assets/img/arrow_white_thin.svg" alt=""> </div>
-                <p> All Products</p>
+            <!-- Bottom Gridline for the works section is handled via CSS bordered on last child now -->
+
+            <div class="works__more"> <a href="services.html" class="scaleEffect button show">
+                <div style="background-color: #1999D5;">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="31" height="31" viewBox="0 0 31 31" fill="none">
+                    <path d="M1 1H30M30 1L1 30M30 1V30" stroke="white" />
+                  </svg>
+                </div>
               </a> </div>
+
           </div>
 
         </section>
@@ -1015,7 +1031,7 @@
                     strategies that transform bold ideas into measurable results.</p>
                 </div>
               </div>
-              <div class="services__body--bottom" style="border-bottom: 1px solid rgb(241,);">
+              <div class="services__body--bottom" style="border-bottom: 1px solid rgb(241,241,241);">
                 <div class="services__body--key">
                   <h6 class="fadeUp-simple">Key Services</h6>
                 </div>
@@ -1024,494 +1040,495 @@
                 </div>
               </div>
             </div>
-            <div class="services__items--mob">
-              <h6>Digital Marketing</h6>
-              <img src="cbtheme/assets/img/resour/arrow_black_big_mob.svg" alt="">
-              <h6>Web Design & development</h6>
-              <img src="cbtheme/assets/img/resour/arrow_black_big_mob.svg" alt="">
-              <h6>Search Engine Optimization</h6>
-              <img src="cbtheme/assets/img/resour/arrow_black_big_mob.svg" alt="">
-              <h6>Meta Ads & Google Ads </h6>
-              <img src="cbtheme/assets/img/resour/arrow_black_big_mob.svg" alt="">
-              <h6>Social Media Marketing</h6>
-              <img src="cbtheme/assets/img/resour/arrow_black_big_mob.svg" alt="">
-              <h6>Branding</h6>
-              <img src="cbtheme/assets/img/resour/arrow_black_big_mob.svg" alt="">
-              <h6>Photography & Videography</h6>
-              <img src="cbtheme/assets/img/resour/arrow_black_big_mob.svg" alt="">
-              <!-- <h6></h6>
-            <img src="cbtheme/assets/img/resour/arrow_black_big_mob.svg" alt=""> 
+          </div>
+          <div class="services__items--mob">
+            <h6>Digital Marketing</h6>
+            <img src="cbtheme/assets/img/resour/arrow_black_big_mob.svg" alt="">
+            <h6>Web Design & development</h6>
+            <img src="cbtheme/assets/img/resour/arrow_black_big_mob.svg" alt="">
+            <h6>Search Engine Optimization</h6>
+            <img src="cbtheme/assets/img/resour/arrow_black_big_mob.svg" alt="">
+            <h6>Meta Ads & Google Ads </h6>
+            <img src="cbtheme/assets/img/resour/arrow_black_big_mob.svg" alt="">
+            <h6>Social Media Marketing</h6>
+            <img src="cbtheme/assets/img/resour/arrow_black_big_mob.svg" alt="">
+            <h6>Branding</h6>
+            <img src="cbtheme/assets/img/resour/arrow_black_big_mob.svg" alt="">
+            <h6>Photography & Videography</h6>
+            <img src="cbtheme/assets/img/resour/arrow_black_big_mob.svg" alt="">
+            <!-- <h6></h6>
+            <img src="cbtheme/assets/img/resour/arrow_black_big_mob.svg" alt="">
             <h6></h6>
             <img src="cbtheme/assets/img/resour/arrow_black_big_mob.svg" alt="">  -->
-              <!-- <h6>Broadcasting Services</h6>
-            <img src="cbtheme/assets/img/resour/arrow_black_big_mob.svg" alt=""> </a> </div> -->
-              <div class="services__items--more"> <a href="" class="scaleEffect button show">
-                  <div> <img src="cbtheme/assets/img/arrow_white.svg" alt=""> </div>
-                  <p>All Services</p>
-                </a> </div>
-            </div>
-            <div class="services__items">
-              <div class="roundabout">
-                <div href="" class="roundabout--inner">
-                  <div class="roundabout--part">
-                    <h4> Digital Marketing
+            <!-- <h6>Broadcasting Services</h6>
+            <img src="cbtheme/assets/img/resour/arrow_black_big_mob.svg" alt=""> -->
+            <div class="services__items--more"> <a href="" class="scaleEffect button show">
+                <div> <img src="cbtheme/assets/img/arrow_white.svg" alt=""> </div>
+                <p>All Services</p>
+              </a> </div>
+          </div>
+          <div class="services__items">
+            <div class="roundabout">
+              <div href="" class="roundabout--inner">
+                <div class="roundabout--part">
+                  <h4> Digital Marketing
 
-                      <p>
-                        <img src="images/arrow_white_thin.svg" alt="close" width="31" height="31">
+                    <p>
+                      <img src="images/arrow_white_thin.svg" alt="close" width="31" height="31">
 
-                      </p>
-                    </h4>
-                    <h4> Digital Marketing
+                    </p>
+                  </h4>
+                  <h4> Digital Marketing
 
-                      <p>
-                        <img src="images/arrow_white_thin.svg" alt="close" width="31" height="31">
-                      </p>
-                    </h4>
-                    <h4> Digital Marketing
+                    <p>
+                      <img src="images/arrow_white_thin.svg" alt="close" width="31" height="31">
+                    </p>
+                  </h4>
+                  <h4> Digital Marketing
 
-                      <p>
-                        <img src="images/arrow_white_thin.svg" alt="close" width="31" height="31">
-                      </p>
-                    </h4>
-                    <h4> Digital Marketing
+                    <p>
+                      <img src="images/arrow_white_thin.svg" alt="close" width="31" height="31">
+                    </p>
+                  </h4>
+                  <h4> Digital Marketing
 
-                      <p>
-                        <img src="images/arrow_white_thin.svg" alt="close" width="31" height="31">
-                      </p>
-                    </h4>
-                  </div>
-                  <div class="roundabout--part">
-                    <h4> Digital Marketing
-
-                      <p>
-                        <img src="images/arrow_white_thin.svg" alt="close" width="31" height="31">
-                      </p>
-                    </h4>
-                    <h4> Digital Marketing
-
-                      <p>
-                        <img src="images/arrow_white_thin.svg" alt="close" width="31" height="31">
-                      </p>
-                    </h4>
-                    <h4> Digital Marketing
-
-                      <p>
-                        <img src="images/arrow_white_thin.svg" alt="close" width="31" height="31">
-                      </p>
-                      </p>
-                    </h4>
-                    <h4> Digital Marketing
-
-                      <p>
-                        <img src="images/arrow_white_thin.svg" alt="close" width="31" height="31">
-                      </p>
-                    </h4>
-                  </div>
+                    <p>
+                      <img src="images/arrow_white_thin.svg" alt="close" width="31" height="31">
+                    </p>
+                  </h4>
                 </div>
-              </div>
-              <div class="roundabout">
-                <div href="" class="roundabout--inner">
-                  <div class="roundabout--part">
-                    <h4> Web Design & development
+                <div class="roundabout--part">
+                  <h4> Digital Marketing
 
-                      <p>
-                        <img src="images/arrow_white_thin.svg" alt="close" width="31" height="31">
-                      </p>
-                    </h4>
-                    <h4> Web Design & development
+                    <p>
+                      <img src="images/arrow_white_thin.svg" alt="close" width="31" height="31">
+                    </p>
+                  </h4>
+                  <h4> Digital Marketing
 
-                      <p>
-                        <img src="images/arrow_white_thin.svg" alt="close" width="31" height="31">
-                      </p>
-                    </h4>
-                    <h4> Web Design & development
+                    <p>
+                      <img src="images/arrow_white_thin.svg" alt="close" width="31" height="31">
+                    </p>
+                  </h4>
+                  <h4> Digital Marketing
 
-                      <p>
-                        <img src="images/arrow_white_thin.svg" alt="close" width="31" height="31">
-                      </p>
-                    </h4>
-                    <h4> Web Design & development
+                    <p>
+                      <img src="images/arrow_white_thin.svg" alt="close" width="31" height="31">
+                    </p>
+                    </p>
+                  </h4>
+                  <h4> Digital Marketing
 
-                      <p>
-                        <img src="images/arrow_white_thin.svg" alt="close" width="31" height="31">
-                      </p>
-                    </h4>
-                  </div>
-                  <div class="roundabout--part">
-                    <h4> Web Design & development
-
-                      <p>
-                        <img src="images/arrow_white_thin.svg" alt="close" width="31" height="31">
-                      </p>
-                    </h4>
-                    <h4> Web Design & development
-
-                      <p>
-                        <img src="images/arrow_white_thin.svg" alt="close" width="31" height="31">
-                      </p>
-                    </h4>
-                    <h4> Web Design & development
-
-                      <p>
-                        <img src="images/arrow_white_thin.svg" alt="close" width="31" height="31">
-                      </p>
-                    </h4>
-                    <h4> Web Design & development
-
-                      <p>
-                        <img src="images/arrow_white_thin.svg" alt="close" width="31" height="31">
-                      </p>
-                    </h4>
-                  </div>
-                </div>
-              </div>
-              <div class="roundabout">
-                <div href="" class="roundabout--inner">
-                  <div class="roundabout--part">
-                    <h4> Website Designing & Development
-                      <p>
-                        <img src="images/arrow_white_thin.svg" alt="close" width="31" height="31">
-                      </p>
-                    </h4>
-                    <h4> Website Designing & Development
-                      <p>
-                        <img src="images/arrow_white_thin.svg" alt="close" width="31" height="31">
-                      </p>
-                    </h4>
-                    <h4> Website Designing & Development
-                      <p>
-                        <img src="images/arrow_white_thin.svg" alt="close" width="31" height="31">
-                      </p>
-                    </h4>
-                    <h4> Website Designing & Development
-                      <p>
-                        <img src="images/arrow_white_thin.svg" alt="close" width="31" height="31">
-                      </p>
-                    </h4>
-                  </div>
-                  <div class="roundabout--part">
-                    <h4> Website Designing & Development
-                      <p>
-                        <img src="images/arrow_white_thin.svg" alt="close" width="31" height="31">
-                      </p>
-                    </h4>
-                    <h4> Website Designing & Development
-                      <p>
-                        <img src="images/arrow_white_thin.svg" alt="close" width="31" height="31">
-                      </p>
-                    </h4>
-                    <h4> Website Designing & Development
-                      <p>
-                        <img src="images/arrow_white_thin.svg" alt="close" width="31" height="31">
-                      </p>
-                    </h4>
-                    <h4> Website Designing & Development
-                      <p>
-                        <img src="images/arrow_white_thin.svg" alt="close" width="31" height="31">
-                      </p>
-                    </h4>
-                  </div>
-                </div>
-              </div>
-              <div class="roundabout">
-                <div href="" class="roundabout--inner">
-                  <div class="roundabout--part">
-                    <h4> Search Engine Optimization
-
-                      <p>
-                        <img src="images/arrow_white_thin.svg" alt="close" width="31" height="31">
-                      </p>
-                    </h4>
-                    <h4> Search Engine Optimization
-
-                      <p>
-                        <img src="images/arrow_white_thin.svg" alt="close" width="31" height="31">
-                      </p>
-                    </h4>
-                    <h4> Search Engine Optimization
-
-                      <p>
-                        <img src="images/arrow_white_thin.svg" alt="close" width="31" height="31">
-                      </p>
-                    </h4>
-                    <h4> Search Engine Optimization
-
-                      <p>
-                        <img src="images/arrow_white_thin.svg" alt="close" width="31" height="31">
-                      </p>
-                    </h4>
-                  </div>
-                  <div class="roundabout--part">
-                    <h4> Search Engine Optimization
-
-                      <p>
-                        <img src="images/arrow_white_thin.svg" alt="close" width="31" height="31">
-                      </p>
-                    </h4>
-                    <h4> Search Engine Optimization
-
-                      <p>
-                        <img src="images/arrow_white_thin.svg" alt="close" width="31" height="31">
-                      </p>
-                    </h4>
-                    <h4> Search Engine Optimization
-
-                      <p>
-                        <img src="images/arrow_white_thin.svg" alt="close" width="31" height="31">
-                      </p>
-                    </h4>
-                    <h4> Search Engine Optimization
-
-                      <p>
-                        <img src="images/arrow_white_thin.svg" alt="close" width="31" height="31">
-                      </p>
-                    </h4>
-                  </div>
-                </div>
-              </div>
-
-              <div class="roundabout">
-                <div href="" class="roundabout--inner">
-                  <div class="roundabout--part">
-                    <h4> Search Engine Marketing
-                      <p>
-                        <img src="images/arrow_white_thin.svg" alt="close" width="31" height="31">
-                      </p>
-                    </h4>
-                    <h4> Search Engine Marketing
-                      <p>
-                        <img src="images/arrow_white_thin.svg" alt="close" width="31" height="31">
-                      </p>
-                    </h4>
-                    <h4> Search Engine Marketing
-                      <p>
-                        <img src="images/arrow_white_thin.svg" alt="close" width="31" height="31">
-                      </p>
-                    </h4>
-                    <h4> Search Engine Marketing
-                      <p>
-                        <img src="images/arrow_white_thin.svg" alt="close" width="31" height="31">
-                      </p>
-                    </h4>
-                  </div>
-                  <div class="roundabout--part">
-                    <h4> Search Engine Marketing
-                      <p>
-                        <img src="images/arrow_white_thin.svg" alt="close" width="31" height="31">
-                      </p>
-                    </h4>
-                    <h4> Search Engine Marketing
-                      <p>
-                        <img src="images/arrow_white_thin.svg" alt="close" width="31" height="31">
-                      </p>
-                    </h4>
-                    <h4> Search Engine Marketing
-                      <p>
-                        <img src="images/arrow_white_thin.svg" alt="close" width="31" height="31">
-                      </p>
-                    </h4>
-                    <h4> Search Engine Marketing
-                      <p>
-                        <img src="images/arrow_white_thin.svg" alt="close" width="31" height="31">
-                      </p>
-                    </h4>
-                  </div>
-                </div>
-              </div>
-
-              <div class="roundabout">
-                <div href="" class="roundabout--inner">
-                  <div class="roundabout--part">
-                    <h4>Meta Ads & Google Ads
-                      <p>
-                        <img src="images/arrow_white_thin.svg" alt="close" width="31" height="31">
-                      </p>
-                    </h4>
-                    <h4> Meta Ads & Google Ads
-                      <p>
-                        <img src="images/arrow_white_thin.svg" alt="close" width="31" height="31">
-                      </p>
-                    </h4>
-                    <h4> Meta Ads & Google Ads
-                      <p>
-                        <img src="images/arrow_white_thin.svg" alt="close" width="31" height="31">
-                      </p>
-                    </h4>
-                    <h4> Meta Ads & Google Ads
-                      <p>
-                        <img src="images/arrow_white_thin.svg" alt="close" width="31" height="31">
-                      </p>
-                    </h4>
-                  </div>
-                  <div class="roundabout--part">
-                    <h4>Meta Ads & Google Ads
-                      <p>
-                        <img src="images/arrow_white_thin.svg" alt="close" width="31" height="31">
-                      </p>
-                    </h4>
-                    <h4> Meta Ads & Google Ads
-                      <p>
-                        <img src="images/arrow_white_thin.svg" alt="close" width="31" height="31">
-                      </p>
-                    </h4>
-                    <h4>Meta Ads & Google Ads
-                      <p>
-                        <img src="images/arrow_white_thin.svg" alt="close" width="31" height="31">
-                      </p>
-                    </h4>
-                    <h4> Meta Ads & Google Ads
-                      <p>
-                        <img src="images/arrow_white_thin.svg" alt="close" width="31" height="31">
-                      </p>
-                    </h4>
-                  </div>
-                </div>
-              </div>
-              <div class="roundabout">
-                <div href="" class="roundabout--inner">
-                  <div class="roundabout--part">
-                    <h4> Social Media Marketing
-                      <p>
-                        <img src="images/arrow_white_thin.svg" alt="close" width="31" height="31">
-                      </p>
-                    </h4>
-                    <h4> Social Media Marketing
-                      <p>
-                        <img src="images/arrow_white_thin.svg" alt="close" width="31" height="31">
-                      </p>
-                    </h4>
-                    <h4> Social Media Marketing
-                      <p>
-                        <img src="images/arrow_white_thin.svg" alt="close" width="31" height="31">
-                      </p>
-                    </h4>
-                    <h4> Social Media Marketing
-                      <p>
-                        <img src="images/arrow_white_thin.svg" alt="close" width="31" height="31">
-                      </p>
-                    </h4>
-                  </div>
-                  <div class="roundabout--part">
-                    <h4> Social Media Marketing
-                      <p>
-                        <img src="images/arrow_white_thin.svg" alt="close" width="31" height="31">
-                      </p>
-                    </h4>
-                    <h4> Social Media Marketing
-                      <p>
-                        <img src="images/arrow_white_thin.svg" alt="close" width="31" height="31">
-                      </p>
-                    </h4>
-                    <h4> Social Media Marketing
-                      <p>
-                        <img src="images/arrow_white_thin.svg" alt="close" width="31" height="31">
-                      </p>
-                    </h4>
-                    <h4> Social Media Marketing
-                      <p>
-                        <img src="images/arrow_white_thin.svg" alt="close" width="31" height="31">
-                      </p>
-                    </h4>
-                  </div>
-                </div>
-              </div>
-              <div class="roundabout">
-                <div href="" class="roundabout--inner">
-                  <div class="roundabout--part">
-                    <h4> Photography & Videography
-                      <p>
-                        <img src="images/arrow_white_thin.svg" alt="close" width="31" height="31">
-                      </p>
-                    </h4>
-                    <h4> Photography & Videography
-                      <p>
-                        <img src="images/arrow_white_thin.svg" alt="close" width="31" height="31">
-                      </p>
-                    </h4>
-                    <h4> Photography & Videography
-                      <p>
-                        <img src="images/arrow_white_thin.svg" alt="close" width="31" height="31">
-                      </p>
-                    </h4>
-                    <h4> Photography & Videography
-                      <p>
-                        <img src="images/arrow_white_thin.svg" alt="close" width="31" height="31">
-                      </p>
-                    </h4>
-                  </div>
-                  <div class="roundabout--part">
-                    <h4> Photography & Videography
-                      <p>
-                        <img src="images/arrow_white_thin.svg" alt="close" width="31" height="31">
-                      </p>
-                    </h4>
-                    <h4> Photography & Videography
-                      <p>
-                        <img src="images/arrow_white_thin.svg" alt="close" width="31" height="31">
-                      </p>
-                    </h4>
-                    <h4> Photography & Videography
-                      <p>
-                        <img src="images/arrow_white_thin.svg" alt="close" width="31" height="31">
-                      </p>
-                    </h4>
-                    <h4> Photography & Videography
-                      <p>
-                        <img src="images/arrow_white_thin.svg" alt="close" width="31" height="31">
-                      </p>
-                    </h4>
-                  </div>
-                </div>
-              </div>
-              <div class="roundabout">
-                <div href="" class="roundabout--inner">
-                  <div class="roundabout--part">
-                    <h4> Branding
-                      <p>
-                        <img src="images/arrow_white_thin.svg" alt="close" width="31" height="31">
-                      </p>
-                    </h4>
-                    <h4> Branding
-                      <p>
-                        <img src="images/arrow_white_thin.svg" alt="close" width="31" height="31">
-                      </p>
-                    </h4>
-                    <h4> Branding
-                      <p>
-                        <img src="images/arrow_white_thin.svg" alt="close" width="31" height="31">
-                      </p>
-                    </h4>
-                    <h4> Branding
-                      <p>
-                        <img src="images/arrow_white_thin.svg" alt="close" width="31" height="31">
-                      </p>
-                    </h4>
-                  </div>
-                  <div class="roundabout--part">
-                    <h4> Branding
-                      <p>
-                        <img src="images/arrow_white_thin.svg" alt="close" width="31" height="31">
-                      </p>
-                    </h4>
-                    <h4>Branding
-                      <p>
-                        <img src="images/arrow_white_thin.svg" alt="close" width="31" height="31">
-                      </p>
-                    </h4>
-                    <h4> Branding
-                      <p>
-                        <img src="images/arrow_white_thin.svg" alt="close" width="31" height="31">
-                      </p>
-                    </h4>
-                    <h4>Branding
-                      <p>
-                        <img src="images/arrow_white_thin.svg" alt="close" width="31" height="31">
-                      </p>
-                    </h4>
-                  </div>
+                    <p>
+                      <img src="images/arrow_white_thin.svg" alt="close" width="31" height="31">
+                    </p>
+                  </h4>
                 </div>
               </div>
             </div>
+            <div class="roundabout">
+              <div href="" class="roundabout--inner">
+                <div class="roundabout--part">
+                  <h4> Web Design & development
+
+                    <p>
+                      <img src="images/arrow_white_thin.svg" alt="close" width="31" height="31">
+                    </p>
+                  </h4>
+                  <h4> Web Design & development
+
+                    <p>
+                      <img src="images/arrow_white_thin.svg" alt="close" width="31" height="31">
+                    </p>
+                  </h4>
+                  <h4> Web Design & development
+
+                    <p>
+                      <img src="images/arrow_white_thin.svg" alt="close" width="31" height="31">
+                    </p>
+                  </h4>
+                  <h4> Web Design & development
+
+                    <p>
+                      <img src="images/arrow_white_thin.svg" alt="close" width="31" height="31">
+                    </p>
+                  </h4>
+                </div>
+                <div class="roundabout--part">
+                  <h4> Web Design & development
+
+                    <p>
+                      <img src="images/arrow_white_thin.svg" alt="close" width="31" height="31">
+                    </p>
+                  </h4>
+                  <h4> Web Design & development
+
+                    <p>
+                      <img src="images/arrow_white_thin.svg" alt="close" width="31" height="31">
+                    </p>
+                  </h4>
+                  <h4> Web Design & development
+
+                    <p>
+                      <img src="images/arrow_white_thin.svg" alt="close" width="31" height="31">
+                    </p>
+                  </h4>
+                  <h4> Web Design & development
+
+                    <p>
+                      <img src="images/arrow_white_thin.svg" alt="close" width="31" height="31">
+                    </p>
+                  </h4>
+                </div>
+              </div>
+            </div>
+            <div class="roundabout">
+              <div href="" class="roundabout--inner">
+                <div class="roundabout--part">
+                  <h4> Website Designing & Development
+                    <p>
+                      <img src="images/arrow_white_thin.svg" alt="close" width="31" height="31">
+                    </p>
+                  </h4>
+                  <h4> Website Designing & Development
+                    <p>
+                      <img src="images/arrow_white_thin.svg" alt="close" width="31" height="31">
+                    </p>
+                  </h4>
+                  <h4> Website Designing & Development
+                    <p>
+                      <img src="images/arrow_white_thin.svg" alt="close" width="31" height="31">
+                    </p>
+                  </h4>
+                  <h4> Website Designing & Development
+                    <p>
+                      <img src="images/arrow_white_thin.svg" alt="close" width="31" height="31">
+                    </p>
+                  </h4>
+                </div>
+                <div class="roundabout--part">
+                  <h4> Website Designing & Development
+                    <p>
+                      <img src="images/arrow_white_thin.svg" alt="close" width="31" height="31">
+                    </p>
+                  </h4>
+                  <h4> Website Designing & Development
+                    <p>
+                      <img src="images/arrow_white_thin.svg" alt="close" width="31" height="31">
+                    </p>
+                  </h4>
+                  <h4> Website Designing & Development
+                    <p>
+                      <img src="images/arrow_white_thin.svg" alt="close" width="31" height="31">
+                    </p>
+                  </h4>
+                  <h4> Website Designing & Development
+                    <p>
+                      <img src="images/arrow_white_thin.svg" alt="close" width="31" height="31">
+                    </p>
+                  </h4>
+                </div>
+              </div>
+            </div>
+            <div class="roundabout">
+              <div href="" class="roundabout--inner">
+                <div class="roundabout--part">
+                  <h4> Search Engine Optimization
+
+                    <p>
+                      <img src="images/arrow_white_thin.svg" alt="close" width="31" height="31">
+                    </p>
+                  </h4>
+                  <h4> Search Engine Optimization
+
+                    <p>
+                      <img src="images/arrow_white_thin.svg" alt="close" width="31" height="31">
+                    </p>
+                  </h4>
+                  <h4> Search Engine Optimization
+
+                    <p>
+                      <img src="images/arrow_white_thin.svg" alt="close" width="31" height="31">
+                    </p>
+                  </h4>
+                  <h4> Search Engine Optimization
+
+                    <p>
+                      <img src="images/arrow_white_thin.svg" alt="close" width="31" height="31">
+                    </p>
+                  </h4>
+                </div>
+                <div class="roundabout--part">
+                  <h4> Search Engine Optimization
+
+                    <p>
+                      <img src="images/arrow_white_thin.svg" alt="close" width="31" height="31">
+                    </p>
+                  </h4>
+                  <h4> Search Engine Optimization
+
+                    <p>
+                      <img src="images/arrow_white_thin.svg" alt="close" width="31" height="31">
+                    </p>
+                  </h4>
+                  <h4> Search Engine Optimization
+
+                    <p>
+                      <img src="images/arrow_white_thin.svg" alt="close" width="31" height="31">
+                    </p>
+                  </h4>
+                  <h4> Search Engine Optimization
+
+                    <p>
+                      <img src="images/arrow_white_thin.svg" alt="close" width="31" height="31">
+                    </p>
+                  </h4>
+                </div>
+              </div>
+            </div>
+
+            <div class="roundabout">
+              <div href="" class="roundabout--inner">
+                <div class="roundabout--part">
+                  <h4> Search Engine Marketing
+                    <p>
+                      <img src="images/arrow_white_thin.svg" alt="close" width="31" height="31">
+                    </p>
+                  </h4>
+                  <h4> Search Engine Marketing
+                    <p>
+                      <img src="images/arrow_white_thin.svg" alt="close" width="31" height="31">
+                    </p>
+                  </h4>
+                  <h4> Search Engine Marketing
+                    <p>
+                      <img src="images/arrow_white_thin.svg" alt="close" width="31" height="31">
+                    </p>
+                  </h4>
+                  <h4> Search Engine Marketing
+                    <p>
+                      <img src="images/arrow_white_thin.svg" alt="close" width="31" height="31">
+                    </p>
+                  </h4>
+                </div>
+                <div class="roundabout--part">
+                  <h4> Search Engine Marketing
+                    <p>
+                      <img src="images/arrow_white_thin.svg" alt="close" width="31" height="31">
+                    </p>
+                  </h4>
+                  <h4> Search Engine Marketing
+                    <p>
+                      <img src="images/arrow_white_thin.svg" alt="close" width="31" height="31">
+                    </p>
+                  </h4>
+                  <h4> Search Engine Marketing
+                    <p>
+                      <img src="images/arrow_white_thin.svg" alt="close" width="31" height="31">
+                    </p>
+                  </h4>
+                  <h4> Search Engine Marketing
+                    <p>
+                      <img src="images/arrow_white_thin.svg" alt="close" width="31" height="31">
+                    </p>
+                  </h4>
+                </div>
+              </div>
+            </div>
+
+            <div class="roundabout">
+              <div href="" class="roundabout--inner">
+                <div class="roundabout--part">
+                  <h4>Meta Ads & Google Ads
+                    <p>
+                      <img src="images/arrow_white_thin.svg" alt="close" width="31" height="31">
+                    </p>
+                  </h4>
+                  <h4> Meta Ads & Google Ads
+                    <p>
+                      <img src="images/arrow_white_thin.svg" alt="close" width="31" height="31">
+                    </p>
+                  </h4>
+                  <h4> Meta Ads & Google Ads
+                    <p>
+                      <img src="images/arrow_white_thin.svg" alt="close" width="31" height="31">
+                    </p>
+                  </h4>
+                  <h4> Meta Ads & Google Ads
+                    <p>
+                      <img src="images/arrow_white_thin.svg" alt="close" width="31" height="31">
+                    </p>
+                  </h4>
+                </div>
+                <div class="roundabout--part">
+                  <h4>Meta Ads & Google Ads
+                    <p>
+                      <img src="images/arrow_white_thin.svg" alt="close" width="31" height="31">
+                    </p>
+                  </h4>
+                  <h4> Meta Ads & Google Ads
+                    <p>
+                      <img src="images/arrow_white_thin.svg" alt="close" width="31" height="31">
+                    </p>
+                  </h4>
+                  <h4>Meta Ads & Google Ads
+                    <p>
+                      <img src="images/arrow_white_thin.svg" alt="close" width="31" height="31">
+                    </p>
+                  </h4>
+                  <h4> Meta Ads & Google Ads
+                    <p>
+                      <img src="images/arrow_white_thin.svg" alt="close" width="31" height="31">
+                    </p>
+                  </h4>
+                </div>
+              </div>
+            </div>
+            <div class="roundabout">
+              <div href="" class="roundabout--inner">
+                <div class="roundabout--part">
+                  <h4> Social Media Marketing
+                    <p>
+                      <img src="images/arrow_white_thin.svg" alt="close" width="31" height="31">
+                    </p>
+                  </h4>
+                  <h4> Social Media Marketing
+                    <p>
+                      <img src="images/arrow_white_thin.svg" alt="close" width="31" height="31">
+                    </p>
+                  </h4>
+                  <h4> Social Media Marketing
+                    <p>
+                      <img src="images/arrow_white_thin.svg" alt="close" width="31" height="31">
+                    </p>
+                  </h4>
+                  <h4> Social Media Marketing
+                    <p>
+                      <img src="images/arrow_white_thin.svg" alt="close" width="31" height="31">
+                    </p>
+                  </h4>
+                </div>
+                <div class="roundabout--part">
+                  <h4> Social Media Marketing
+                    <p>
+                      <img src="images/arrow_white_thin.svg" alt="close" width="31" height="31">
+                    </p>
+                  </h4>
+                  <h4> Social Media Marketing
+                    <p>
+                      <img src="images/arrow_white_thin.svg" alt="close" width="31" height="31">
+                    </p>
+                  </h4>
+                  <h4> Social Media Marketing
+                    <p>
+                      <img src="images/arrow_white_thin.svg" alt="close" width="31" height="31">
+                    </p>
+                  </h4>
+                  <h4> Social Media Marketing
+                    <p>
+                      <img src="images/arrow_white_thin.svg" alt="close" width="31" height="31">
+                    </p>
+                  </h4>
+                </div>
+              </div>
+            </div>
+            <div class="roundabout">
+              <div href="" class="roundabout--inner">
+                <div class="roundabout--part">
+                  <h4> Photography & Videography
+                    <p>
+                      <img src="images/arrow_white_thin.svg" alt="close" width="31" height="31">
+                    </p>
+                  </h4>
+                  <h4> Photography & Videography
+                    <p>
+                      <img src="images/arrow_white_thin.svg" alt="close" width="31" height="31">
+                    </p>
+                  </h4>
+                  <h4> Photography & Videography
+                    <p>
+                      <img src="images/arrow_white_thin.svg" alt="close" width="31" height="31">
+                    </p>
+                  </h4>
+                  <h4> Photography & Videography
+                    <p>
+                      <img src="images/arrow_white_thin.svg" alt="close" width="31" height="31">
+                    </p>
+                  </h4>
+                </div>
+                <div class="roundabout--part">
+                  <h4> Photography & Videography
+                    <p>
+                      <img src="images/arrow_white_thin.svg" alt="close" width="31" height="31">
+                    </p>
+                  </h4>
+                  <h4> Photography & Videography
+                    <p>
+                      <img src="images/arrow_white_thin.svg" alt="close" width="31" height="31">
+                    </p>
+                  </h4>
+                  <h4> Photography & Videography
+                    <p>
+                      <img src="images/arrow_white_thin.svg" alt="close" width="31" height="31">
+                    </p>
+                  </h4>
+                  <h4> Photography & Videography
+                    <p>
+                      <img src="images/arrow_white_thin.svg" alt="close" width="31" height="31">
+                    </p>
+                  </h4>
+                </div>
+              </div>
+            </div>
+            <div class="roundabout">
+              <div href="" class="roundabout--inner">
+                <div class="roundabout--part">
+                  <h4> Branding
+                    <p>
+                      <img src="images/arrow_white_thin.svg" alt="close" width="31" height="31">
+                    </p>
+                  </h4>
+                  <h4> Branding
+                    <p>
+                      <img src="images/arrow_white_thin.svg" alt="close" width="31" height="31">
+                    </p>
+                  </h4>
+                  <h4> Branding
+                    <p>
+                      <img src="images/arrow_white_thin.svg" alt="close" width="31" height="31">
+                    </p>
+                  </h4>
+                  <h4> Branding
+                    <p>
+                      <img src="images/arrow_white_thin.svg" alt="close" width="31" height="31">
+                    </p>
+                  </h4>
+                </div>
+                <div class="roundabout--part">
+                  <h4> Branding
+                    <p>
+                      <img src="images/arrow_white_thin.svg" alt="close" width="31" height="31">
+                    </p>
+                  </h4>
+                  <h4>Branding
+                    <p>
+                      <img src="images/arrow_white_thin.svg" alt="close" width="31" height="31">
+                    </p>
+                  </h4>
+                  <h4> Branding
+                    <p>
+                      <img src="images/arrow_white_thin.svg" alt="close" width="31" height="31">
+                    </p>
+                  </h4>
+                  <h4>Branding
+                    <p>
+                      <img src="images/arrow_white_thin.svg" alt="close" width="31" height="31">
+                    </p>
+                  </h4>
+                </div>
+              </div>
+            </div>
+          </div>
         </section>
         <div class="clients--wrapp section--white">
 
@@ -2394,4 +2411,4 @@
 
 <!-- Mirrored from FT Nexavvy.com/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 19 Jul 2025 14:36:31 GMT -->
 
-</html>
+</html> 

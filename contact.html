@@ -171,7 +171,17 @@
     }
 
     .contacts__mails--row {
-      border-bottom: 1px solid rgb(72, 72, 72);
+      position: relative;
+      padding-bottom: 60px;
+    }
+
+    .contacts__mails--row::after {
+      content: "";
+      display: block;
+      width: 750px;
+      height: 1px;
+      background-color: white;
+      margin: 50px auto 0;
     }
 
     .hidden,
@@ -324,7 +334,7 @@
                   </span>
                 </p>
               </div>
-             
+
             </div>
             <div class="response-output">
               <p id="error_data"></p>
@@ -422,7 +432,7 @@
                       </span>
                     </p>
                   </div>
-                 
+
                 </div>
                 <div class="response-output">
                   <p id="error_data"></p>
@@ -683,9 +693,9 @@
         </section>
         <section class="s_talk section--white">
           <div class="container">
-          <p class="fadeUp-simple">START YOUR DIGITAL JOURNEY</p>
-<h3 class="anim--title">
-CONNECT WITH US.</h3>
+            <p class="fadeUp-simple">START YOUR DIGITAL JOURNEY</p>
+            <h3 class="anim--title">
+              CONNECT WITH US.</h3>
 
             <a href="#" class="s_talk--btn scaleEffect button formBtn">
               <div> <img src="cbtheme/assets/img/arrow_white.svg" alt=""> </div>

@@ -106,8 +106,17 @@
     }
 
     .c_article__info--row {
-      border-right: 1px solid rgb(74, 74, 74);
+      /* border-right: 1px solid rgb(74, 74, 74); */
       border-bottom: 1px solid rgb(74, 74, 74)
+    }
+    .c_article__info--row:nth-of-type(1):after {
+    content: " ";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 1px;
+    height: 0;
+    background:rgb(74,74,74);
     }
 
     .c_case__desc--btns p a {
