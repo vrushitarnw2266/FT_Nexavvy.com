@@ -172,7 +172,7 @@
 
     .contacts__mails--row {
       position: relative;
-      padding-bottom: 60px;
+    
     }
 
     .contacts__mails--row::after {
@@ -182,6 +182,11 @@
       height: 1px;
       background-color: white;
       margin: 50px auto 0;
+    }
+
+    /* remove line for last row */
+    .contacts__mails--row:last-child::after {
+      display: none;
     }
 
     .hidden,
